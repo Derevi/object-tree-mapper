@@ -1,6 +1,12 @@
 package kkn.derevi;
 
-public class ClassOrganizer {
+import java.util.List;
+
+public interface ClassOrganizer {
+
+    public List<List<String>> connectedTreeMap(List<String> classList);
+
+
     //todo: comparator, interface
     //todo: organize all methods (key), based on number of values, he highes will be above the lesser
     //todo: the method with the greatest amounts of dependencies will be at the top and organized by lesser dependencies at the bottom
