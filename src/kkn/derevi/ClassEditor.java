@@ -3,14 +3,14 @@ package kkn.derevi;
 import java.util.List;
 import java.util.Map;
 
-public class classEditor {
+public class ClassEditor {
 
     private ClassModel classModel;
     private List<String> methodsList;
     private List<String> dependencyList;
 
 
-    public classEditor(ClassModel classModel) {
+    public ClassEditor(ClassModel classModel) {
         this.classModel = classModel;
         this.dependencyList = classModel.getClassDependencies();
         this.methodsList = classModel.getClassMethods();

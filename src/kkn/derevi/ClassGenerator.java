@@ -12,16 +12,23 @@ public class ClassGenerator {
 
     }
 
-
+/*
     public Map<String String> defineMethod(){
         //args...method
 
         }
+        //ask for class name
+        //ask for method list
+        //ask for dependency list
+        pass allthrough class model to create object
+
+        <generate list of Class names>
 
 
 
         return;
     }
+    */
 
     /*
     public List<String> classList(String className){
