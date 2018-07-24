@@ -2,11 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b343eec7-740e-4ce4-8442-d3ca28e39fc5" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/kkn/derevi/ClassGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kkn/derevi/ClassGenerator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/kkn/derevi/ClassOrganizer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kkn/derevi/ClassOrganizer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/kkn/derevi/ClassTextDrawer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kkn/derevi/ClassTextDrawer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/kkn/derevi/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kkn/derevi/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/kkn/derevi/TreeTierSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kkn/derevi/TreeTierSort.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -113,8 +108,8 @@
       <file leaf-file-name="TreeTierSort.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/kkn/derevi/TreeTierSort.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="479">
-              <caret line="98" column="12" selection-start-line="98" selection-start-column="12" selection-end-line="98" selection-end-column="32" />
+            <state relative-caret-position="-331">
+              <caret line="86" column="40" selection-start-line="86" selection-start-column="40" selection-end-line="86" selection-end-column="40" />
               <folding>
                 <element signature="e#0#2391#0" expanded="true" />
                 <element signature="imports" expanded="true" />
@@ -301,12 +296,12 @@
       <option name="presentableId" value="Default" />
       <updated>1532068326458</updated>
       <workItem from="1532068327731" duration="6213000" />
-      <workItem from="1532291750951" duration="37690000" />
+      <workItem from="1532291750951" duration="38261000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="43903000" />
+    <option name="totallyTimeSpent" value="44474000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1920" y="27" width="1920" height="1029" extended-state="6" />
@@ -518,8 +513,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/kkn/derevi/TreeTierSort.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="479">
-          <caret line="98" column="12" selection-start-line="98" selection-start-column="12" selection-end-line="98" selection-end-column="32" />
+        <state relative-caret-position="-331">
+          <caret line="86" column="40" selection-start-line="86" selection-start-column="40" selection-end-line="86" selection-end-column="40" />
           <folding>
             <element signature="e#0#2391#0" expanded="true" />
             <element signature="imports" expanded="true" />

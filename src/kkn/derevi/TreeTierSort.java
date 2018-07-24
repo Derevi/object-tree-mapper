@@ -82,7 +82,11 @@ index
         Collection<String> classListCollection = new ArrayList<>(classList); //
         int index = classListCollection.size();
 
-        if(classListCollection.size()==0){return tierList;};
+        if(classListCollection.size()==0){
+            tier++;
+            tierList.add(tier, classList);
+            return tierList;
+        }
 
         if(index==0){
 
@@ -94,10 +98,11 @@ index
             return classDependencyTierSort(tierList);
 
 
-        } else if(!classListCollection.contains(classList.get(index))){
+        } else if(!(classListCollection.contains(classList.get(index)))){
 
-            classList.add(index);
+            classListCollection.remove(classList.get(index));
             index--;
+            return classDependencyTierSort(tierList);
 
            /* elseif(allist element at subindex Key!=Value alllist)
             index--
@@ -105,8 +110,13 @@ index
             remove element from classListCollection
             return sort(classList classListSize--)
                     */
-        }else if (classListCollection.contains(classList.get(subIndex))){
+        }else if (classListCollection.contains(classList.get(index))){
+            classList.remove(index);
+            index--;
+            return classDependencyTierSort(tierList);
+
             /*
+
 
  elseif(listKey=Value)
  subindex --
@@ -114,6 +124,8 @@ index
   return sort(classList, classListSize)
 */
         }else{
+            classListCollection.remove(classList.get(index));
+            index--;
             //create terminal tier
             //add to terminal tier
             //remove from list
