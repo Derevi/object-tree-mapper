@@ -1,10 +1,11 @@
 package kkn.derevi;
 
+import java.util.Collection;
 import java.util.List;
 
 public interface ClassOrganizer {
 
-    public List<List<String>> connectedTreeMap(List<String> list, int classListSize);
+    public List<List<String>> classDependencyTierSort(Collection<String> classListCollection, List<String> classList, int classListSize, int tier, int index);
 
 
     //todo: comparator, interface

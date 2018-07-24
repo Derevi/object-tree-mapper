@@ -1,3 +1,4 @@
+
 /*
  Recursive sort (list, int)
 list of all classes
@@ -53,11 +54,14 @@ import java.util.Map;
 
 public class TreeTierSort implements ClassOrganizer {
 
+    private int tier = 0;
+
+
 
 
 
     @Override
-    public List<List<String>> classDependencyTierSort(List<List<String>> tierList) {
+    public List<List<String>> classDependencyTierSort(Collection<String> classListCollection, List<String> classList, int classListSize, int tier, int index) {
 /*
  Recursive sort (list, int)
 list of all classes
@@ -70,17 +74,21 @@ index
 
  if(subindex==0){
  */
+////////////////////GOES BEFORE METHOD///////////////////////
 
         List<String> methodList = new ArrayList<>();
         List<String> dependencyList = new ArrayList<>();
-        List<String> classList = new ArrayList<>();
-        tierList = new ArrayList<>();
-        int tier= 0;
+        classList = new ArrayList<>();
+        List<List<String>> tierList = new ArrayList<>();
+        // int tier= 0;
+        //
 
-        int classListSize=classList.size();
+        classListSize=classList.size();
 
-        Collection<String> classListCollection = new ArrayList<>(classList); //
-        int index = classListCollection.size();
+        classListCollection = new ArrayList<>(classList);
+////////////////////GOES BEFORE METHOD///////////////////////
+ //
+        //int index = classListCollection.size();
 
         if(classListCollection.size()==0){
             tier++;
@@ -91,18 +99,17 @@ index
         if(index==0){
 
             tierList.add(tier, classList);
-            tier++;
-            index=classListCollection.size();
+            //tier++;
+            //index=classListCollection.size();
             classList.clear();
             classList.addAll(classListCollection);
-            return classDependencyTierSort(tierList);
+            return classDependencyTierSort(classListCollection, classList, classListSize=classList.size(), tier++, index=classListCollection.size());
 
 
         } else if(!(classListCollection.contains(classList.get(index)))){
-
             classListCollection.remove(classList.get(index));
-            index--;
-            return classDependencyTierSort(tierList);
+            //index--;
+            return classDependencyTierSort(classListCollection, classList, classListSize-1, tier, index--);
 
            /* elseif(allist element at subindex Key!=Value alllist)
             index--
@@ -112,8 +119,7 @@ index
                     */
         }else if (classListCollection.contains(classList.get(index))){
             classList.remove(index);
-            index--;
-            return classDependencyTierSort(tierList);
+            return classDependencyTierSort(classListCollection, classList, classListSize, tier, index--);
 
             /*
 
@@ -126,6 +132,7 @@ index
         }else{
             classListCollection.remove(classList.get(index));
             index--;
+            return classDependencyTierSort(classListCollection, classList, classListSize, tier, index--);
             //create terminal tier
             //add to terminal tier
             //remove from list
@@ -153,8 +160,8 @@ index
         */
 
 
-        List<List<String>> sortedTierMap = new ArrayList<>();
-        return sortedTierMap;
+        //List<List<String>> sortedTierMap = new ArrayList<>();
+        //return sortedTierMap;
 
 
 
