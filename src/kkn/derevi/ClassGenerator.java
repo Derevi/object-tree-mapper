@@ -5,12 +5,34 @@ import java.util.List;
 import java.util.Map;
 
 public class ClassGenerator {
+    private List<String> classes;
+    private List<String> methods;
+    private List<String> dependencies;
 
-    private String className;
-    public ClassGenerator(String className) {
-        this.className = className;
+
+    public ClassGenerator() {
+
+
+
+        //if new class
+        //get class name,
+        //create ListOfMethods and add
+        //create ListOfDependency ad add
+        //when done clear all lists
+        //prmpt if a new one
+        //prompt for edits
+        //prompt for render
+        //serializable
+
+
+
 
     }
+
+
+
+
+
 
 /*
     public Map<String String> defineMethod(){

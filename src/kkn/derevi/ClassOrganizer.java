@@ -4,7 +4,7 @@ import java.util.List;
 
 public interface ClassOrganizer {
 
-    public List<List<String>> connectedTreeMap(List<String> classList);
+    public List<List<String>> connectedTreeMap(List<String> list, int classListSize);
 
 
     //todo: comparator, interface
