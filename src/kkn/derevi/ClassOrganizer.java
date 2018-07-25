@@ -2,10 +2,11 @@ package kkn.derevi;
 
 import java.util.Collection;
 import java.util.List;
+import java.util.Map;
 
 public interface ClassOrganizer {
 
-    public List<List<String>> classDependencyTierSort(Collection<String> classListCollection, List<String> classList, int classListSize, int tier, int index);
+    public List<List<String>> classDependencyTierSort(List<String> classListCollection, Map<String, List<String>> dependencyMap);
 
 
     //todo: comparator, interface
