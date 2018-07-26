@@ -31,6 +31,9 @@ public class Main {
 
         Collection<List<String>> testMapListCollection = new ArrayList<>(testMap.values());
         List<String> testMapList = new ArrayList<>();
+
+        List<String> list5 = new ArrayList<>();
+
         testMapListCollection.forEach(testMapList::addAll);
 
         mapWithRemovedKey(testMap, "list2");
