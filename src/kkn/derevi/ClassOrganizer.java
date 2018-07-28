@@ -6,8 +6,7 @@ import java.util.Map;
 
 public interface ClassOrganizer {
 
-    public List<List<String>> classDependencyTierSort(List<String> classListCollection, Map<String, List<String>> dependencyMap);
-
+    public List<List<String>> classDependencyTierSort(List<List<String>> tierList, int tier, int tierIndex);
 
     //todo: comparator, interface
     //todo: organize all methods (key), based on number of values, he highes will be above the lesser

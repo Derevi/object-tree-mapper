@@ -4,51 +4,56 @@ import java.util.*;
 
 public class TreeTierSort implements ClassOrganizer {
 
-    private int tier = 0;
-    private int index;
-    private boolean runOnce = true;
-    private List<List<String>> tierList;
     private List<String> classList;
+    private Map<String, List<String>> dependencyMap;
 
-    public TreeTierSort() {
-       tierList = new ArrayList<>();
-       classList = new ArrayList<>();
+
+    public TreeTierSort(List<String> classList, Map<String, List<String>> dependencyMap) {
+        this.classList = classList;
+        this.dependencyMap = dependencyMap;
     }
+
+    public Map<String, List<List<String>>> parallelSort(List<String> classList, Map<String, List<String>> dependencyMap) {
+        this.classList = new ArrayList<>(classList);
+
+        List<String> dependencyList = dependencyListGenerator(dependencyMap);
+        classList.removeAll(dependencyList);
+        Map<String, List<List<String>>> tierListMap = new HashMap<>();
+        classList.parallelStream().forEach(className -> {
+            List<List<String>> tierList = new ArrayList<>();
+            tierList.get(0).add(className);
+            tierListMap.put(className, classDependencyTierSort(tierList, 0, 0));
+        });
+        return tierListMap;
+    }
+
 
     @Override
-    public List<List<String>> classDependencyTierSort(List<String> classList, Map<String, List<String>> dependencyMap) {
+    public List<List<String>> classDependencyTierSort(List<List<String>> tierList, int tier, int tierIndex) {
 
-        classList = new ArrayList<>();
-        List<String> dependencyList = dependencyListGenerator(dependencyMap);
-        Queue<String> classQueue = new ArrayDeque<>(classList);
+        String tierListElement = tierList.get(tier).get(tierIndex);
 
-        if (dependencyMap.isEmpty()) {
-            return tierList;
-        } else if (tierList == null) {
-            classList.removeAll(dependencyList);
-            classQueue.addAll(classList);
-            tierList.get(tier).addAll(classList);
-            tier++;
-            return classDependencyTierSort(classList, dependencyMap);
-        } else if (dependencyMap.keySet().contains(classQueue.peek())) {
-            tierList.get(tier).addAll(dependencyMap.get(classQueue.peek()));
-            dependencyMap.remove(classQueue.poll());
-            return classDependencyTierSort(classList, dependencyMap);
-        } else if (!classQueue.isEmpty()) {
-            classList.remove(classQueue.peek());
-            return classDependencyTierSort(classList, dependencyMap);
-        } else {
-            classList.addAll(tierList.get(tier));
-            tier++;
-            return classDependencyTierSort(classList, dependencyMap);
+        if ((tier + tierIndex)== 0) {
+            tierList.get(tier+1).addAll(dependencyMap.get(tierListElement));
+            dependencyMap.remove(tierListElement);
+            return classDependencyTierSort(tierList, tier++, tierIndex);
+        } else if (dependencyMap.keySet().contains(tierListElement)) {
+            tierList.get(tier + 1).addAll(dependencyMap.get(tierListElement));
+            dependencyMap.remove(tierListElement);
+            return classDependencyTierSort(tierList, tier, tierIndex++);
+        }else if(tierList.get(tier).isEmpty()){
+         return tierList;
+        }else if (tierList.get(tier).size()==tierIndex) {
+            return classDependencyTierSort(tierList, tier++, 0);
+        }else {
+            return classDependencyTierSort(tierList, tier, tierIndex++);
         }
     }
-
 
     private List<String> dependencyListGenerator(Map<String, List<String>> dependencyMap) {
         Collection<List<String>> dependencyListCollection = new ArrayList<>(dependencyMap.values());
         List<String> dependencyList = new ArrayList<>();
-        dependencyListCollection.forEach(dependencyList::addAll);
+        dependencyListCollection.parallelStream().forEach(dependencyList::addAll);
         return dependencyList;
     }
 }
