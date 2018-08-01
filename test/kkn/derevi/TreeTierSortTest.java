@@ -7,16 +7,13 @@ import java.util.*;
 
 import static org.junit.Assert.*;
 
+//Todo Move dependency map over to a test double once Class generator is completed
+
 public class TreeTierSortTest {
     ClassOrganizer classOrganizer;
     List<String> classList;
     Map<String, List<String>> dependencyMap;
     Map<String, List<List<String>>> tierListMap;
-
-
-
-    //TODO finish Class generator and use dependencyMap and classList as test inputs
-
 
     @Before
     public void setUp() throws Exception {

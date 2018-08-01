@@ -11,19 +11,9 @@ public class ClassGenerator {
 
 
     public ClassGenerator() {
-
-
-
-        //if new class
-        //get class name,
-        //create ListOfMethods and add
-        //create ListOfDependency ad add
-        //when done clear all lists
-        //prmpt if a new one
-        //prompt for edits
-        //prompt for render
-        //serializable
-
+        //Todo read input and create classModel
+        //todo allow for modification of any classModel as well as adding to and removing from list
+        //Todo create test class, check for null, and out of bounds exception,
 
 
 
@@ -34,40 +24,4 @@ public class ClassGenerator {
 
 
 
-/*
-    public Map<String String> defineMethod(){
-        //args...method
-
-        }
-        //ask for class name
-        //ask for method list
-        //ask for dependency list
-        pass allthrough class model to create object
-
-        <generate list of Class names>
-
-
-
-        return;
-    }
-    */
-
-    /*
-    public List<String> classList(String className){
-
-        List<String> classList = new ArrayList<>();
-
-
-
-        for(String classInList:classList){
-            if(classInList==null){
-                classList.add(className);
-            }
-            else{
-                classList.add(className);
-            }
-
-        }
-        return classList;
-    }*/
 }

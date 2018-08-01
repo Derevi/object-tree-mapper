@@ -2,9 +2,12 @@ package kkn.derevi;
 
 import java.util.*;
 
+//Todo RENAME implementation for improved readability and some variables and objects as well
+
 public class TreeTierSort implements ClassOrganizer {
 
     private Map<String, List<String>> dependencyMap;
+
 
 
     public TreeTierSort() {
