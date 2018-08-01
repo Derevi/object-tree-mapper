@@ -4,10 +4,6 @@
     <list default="true" id="b343eec7-740e-4ce4-8442-d3ca28e39fc5" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/kkn/derevi/ClassOrganizer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kkn/derevi/ClassOrganizer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/kkn/derevi/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kkn/derevi/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/kkn/derevi/TreeTierSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kkn/derevi/TreeTierSort.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/kkn/derevi/TreeTierSortTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/kkn/derevi/TreeTierSortTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -96,7 +92,7 @@
       <file leaf-file-name="test.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/kkn/derevi/test.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
+            <state relative-caret-position="464">
               <caret line="110" lean-forward="true" selection-start-line="110" selection-end-line="110" />
             </state>
           </provider>
@@ -166,11 +162,11 @@
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="1920" />
-    <option name="y" value="27" />
+    <option name="y" value="-1" />
     <option name="width" value="1920" />
-    <option name="height" value="1029" />
+    <option name="height" value="1057" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="1" id="Add" />
@@ -391,7 +387,7 @@
       <workItem from="1532068327731" duration="6213000" />
       <workItem from="1532291750951" duration="60328000" />
       <workItem from="1532545875054" duration="23997000" />
-      <workItem from="1532713832143" duration="78427000" />
+      <workItem from="1532713832143" duration="79381000" />
     </task>
     <servers />
   </component>
@@ -428,10 +424,10 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="168965000" />
+    <option name="totallyTimeSpent" value="169919000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1920" y="27" width="1920" height="1029" extended-state="6" />
+    <frame x="1920" y="-1" width="1920" height="1057" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
@@ -443,7 +439,7 @@
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="right" id="Maven Projects" order="3" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32972974" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32004198" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="right" id="Coverage" side_tool="true" weight="0.3296875" />
       <window_info anchor="bottom" id="Terminal" order="7" />
@@ -879,7 +875,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/kkn/derevi/test.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
+        <state relative-caret-position="464">
           <caret line="110" lean-forward="true" selection-start-line="110" selection-end-line="110" />
         </state>
       </provider>
