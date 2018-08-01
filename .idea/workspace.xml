@@ -3,10 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="b343eec7-740e-4ce4-8442-d3ca28e39fc5" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/src/kkn/derevi/ClassGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kkn/derevi/ClassGenerator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/kkn/derevi/ClassOrganizer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kkn/derevi/ClassOrganizer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/kkn/derevi/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kkn/derevi/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/kkn/derevi/TreeTierSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kkn/derevi/TreeTierSort.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/kkn/derevi/TreeTierSortTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/kkn/derevi/TreeTierSortTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -41,8 +37,8 @@
       <file leaf-file-name="ClassGenerator.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/kkn/derevi/ClassGenerator.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="15" column="78" selection-start-line="15" selection-start-column="78" selection-end-line="15" selection-end-column="78" />
+            <state relative-caret-position="240">
+              <caret line="16" column="32" selection-start-line="16" selection-start-column="32" selection-end-line="16" selection-end-column="32" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -150,9 +146,9 @@
         <option value="$PROJECT_DIR$/src/kkn/derevi/test.java" />
         <option value="$PROJECT_DIR$/src/kkn/derevi/ClassOrganizer.java" />
         <option value="$PROJECT_DIR$/src/kkn/derevi/TreeTierSort.java" />
-        <option value="$PROJECT_DIR$/src/kkn/derevi/ClassGenerator.java" />
         <option value="$PROJECT_DIR$/src/kkn/derevi/Main.java" />
         <option value="$PROJECT_DIR$/test/kkn/derevi/TreeTierSortTest.java" />
+        <option value="$PROJECT_DIR$/src/kkn/derevi/ClassGenerator.java" />
       </list>
     </option>
   </component>
@@ -165,11 +161,11 @@
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="1920" />
-    <option name="y" value="27" />
+    <option name="y" value="-1" />
     <option name="width" value="1920" />
-    <option name="height" value="1029" />
+    <option name="height" value="1057" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="1" id="Add" />
@@ -390,7 +386,7 @@
       <workItem from="1532068327731" duration="6213000" />
       <workItem from="1532291750951" duration="60328000" />
       <workItem from="1532545875054" duration="23997000" />
-      <workItem from="1532713832143" duration="79835000" />
+      <workItem from="1532713832143" duration="79963000" />
     </task>
     <servers />
   </component>
@@ -427,7 +423,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="170373000" />
+    <option name="totallyTimeSpent" value="170501000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1920" y="27" width="1920" height="1029" extended-state="6" />
@@ -857,8 +853,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/kkn/derevi/ClassGenerator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="78" selection-start-line="15" selection-start-column="78" selection-end-line="15" selection-end-column="78" />
+        <state relative-caret-position="240">
+          <caret line="16" column="32" selection-start-line="16" selection-start-column="32" selection-end-line="16" selection-end-column="32" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
