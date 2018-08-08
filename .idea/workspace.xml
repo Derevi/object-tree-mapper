@@ -2,13 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b343eec7-740e-4ce4-8442-d3ca28e39fc5" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/kkn/derevi/ClassEditor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kkn/derevi/ClassEditor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/kkn/derevi/ClassGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kkn/derevi/ClassModelsManager.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/kkn/derevi/ClassModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kkn/derevi/ClassModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/kkn/derevi/ClassModelsList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kkn/derevi/ClassModelsCatalog.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/kkn/derevi/TreeTierSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kkn/derevi/TreeTierSort.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/kkn/derevi/ClassModelsListTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/kkn/derevi/ClassModelsCatalogTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/kkn/derevi/ClassModelsCatalog.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kkn/derevi/ClassModelsCatalogGenerator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/kkn/derevi/ClassModelsManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kkn/derevi/ClassModelsManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/kkn/derevi/UMLDiagramApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kkn/derevi/UMLDiagramApp.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -28,29 +26,22 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="ClassModelsManager.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/kkn/derevi/ClassModelsManager.java">
+      <file leaf-file-name="UMLDiagramApp.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/kkn/derevi/UMLDiagramApp.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="13" column="4" selection-start-line="13" selection-start-column="4" selection-end-line="13" selection-end-column="48" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#2718#2719#0" expanded="true" />
-                <element signature="e#2760#2761#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="345">
+              <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ClassModel.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/kkn/derevi/ClassModel.java">
+      <file leaf-file-name="ClassModelsManager.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/kkn/derevi/ClassModelsManager.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="14" column="36" lean-forward="true" selection-start-line="14" selection-start-column="36" selection-end-line="14" selection-end-column="36" />
+            <state relative-caret-position="-126">
+              <caret line="44" column="30" selection-start-line="44" selection-start-column="30" selection-end-line="44" selection-end-column="30" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#743#744#0" expanded="true" />
-                <element signature="e#786#787#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -59,17 +50,72 @@
       <file leaf-file-name="ClassEditor.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/kkn/derevi/ClassEditor.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+            <state relative-caret-position="-486">
+              <caret line="26" column="36" lean-forward="true" selection-start-line="26" selection-start-column="36" selection-end-line="26" selection-end-column="36" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#211#212#0" expanded="true" />
+                <element signature="e#271#272#0" expanded="true" />
+                <element signature="e#3696#3697#0" expanded="true" />
+                <element signature="e#3749#3750#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ClassModelsCatalog.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/kkn/derevi/ClassModelsCatalog.java">
+      <file leaf-file-name="ClassModel.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/kkn/derevi/ClassModel.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+            <state relative-caret-position="240">
+              <caret line="16" column="35" lean-forward="true" selection-start-line="16" selection-start-column="35" selection-end-line="16" selection-end-column="35" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#743#744#0" expanded="true" />
+                <element signature="e#786#787#0" expanded="true" />
+                <element signature="e#866#867#0" expanded="true" />
+                <element signature="e#901#902#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ClassMethodsAndDependenciesAssembler.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/kkn/derevi/ClassMethodsAndDependenciesAssembler.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="210">
+              <caret line="14" column="94" lean-forward="true" selection-start-line="14" selection-start-column="94" selection-end-line="14" selection-end-column="94" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#759#760#0" expanded="true" />
+                <element signature="e#800#801#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ClassGeneratorPrompt.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/kkn/derevi/ClassGeneratorPrompt.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="4" selection-start-line="4" selection-end-line="4" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ClassEditorTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test/kkn/derevi/ClassEditorTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="660">
+              <caret line="46" column="5" selection-start-line="46" selection-start-column="5" selection-end-line="46" selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ClassModelsCatalogGenerator.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/kkn/derevi/ClassModelsCatalogGenerator.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="204">
+              <caret line="15" column="77" lean-forward="true" selection-start-line="15" selection-start-column="77" selection-end-line="15" selection-end-column="77" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -80,55 +126,8 @@
       <file leaf-file-name="ClassModelsCatalogTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test/kkn/derevi/ClassModelsCatalogTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="465">
+            <state relative-caret-position="375">
               <caret line="38" column="33" lean-forward="true" selection-start-line="38" selection-start-column="33" selection-end-line="38" selection-end-column="33" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ClassMethodsAndDependenciesAssembler.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/kkn/derevi/ClassMethodsAndDependenciesAssembler.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="12" column="53" selection-start-line="12" selection-start-column="53" selection-end-line="12" selection-end-column="53" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#759#760#0" expanded="true" />
-                <element signature="e#800#801#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TreeTierSortTest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test/kkn/derevi/TreeTierSortTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="19">
-              <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ClassOrganizer.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/kkn/derevi/ClassOrganizer.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" column="4" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="52" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="test.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/kkn/derevi/test.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="18" column="56" lean-forward="true" selection-start-line="18" selection-start-column="56" selection-end-line="18" selection-end-column="56" />
             </state>
           </provider>
         </entry>
@@ -136,8 +135,8 @@
       <file leaf-file-name="TreeTierSort.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/kkn/derevi/TreeTierSort.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="4" column="20" selection-start-line="4" selection-start-column="20" selection-end-line="4" selection-end-column="20" />
+            <state relative-caret-position="225">
+              <caret line="17" column="95" selection-start-line="17" selection-start-column="75" selection-end-line="17" selection-end-column="95" />
             </state>
           </provider>
         </entry>
@@ -165,19 +164,21 @@
         <option value="$PROJECT_DIR$/src/kkn/derevi/ClassMethodsAndDependenciesAssembler.java" />
         <option value="$PROJECT_DIR$/src/kkn/derevi/ClassTextDrawer.java" />
         <option value="$PROJECT_DIR$/src/kkn/derevi/TreeTierSortTest.java" />
-        <option value="$PROJECT_DIR$/src/kkn/derevi/test.java" />
         <option value="$PROJECT_DIR$/src/kkn/derevi/ClassOrganizer.java" />
         <option value="$PROJECT_DIR$/test/kkn/derevi/TreeTierSortTest.java" />
         <option value="$PROJECT_DIR$/src/kkn/derevi/Main.java" />
-        <option value="$PROJECT_DIR$/src/kkn/derevi/UMLDiagramApp.java" />
         <option value="$PROJECT_DIR$/test/kkn/derevi/ClassModelsListTest.java" />
         <option value="$PROJECT_DIR$/src/kkn/derevi/ClassModelsList.java" />
         <option value="$PROJECT_DIR$/src/kkn/derevi/ClassGenerator.java" />
         <option value="$PROJECT_DIR$/src/kkn/derevi/TreeTierSort.java" />
-        <option value="$PROJECT_DIR$/src/kkn/derevi/ClassModelsManager.java" />
         <option value="$PROJECT_DIR$/src/kkn/derevi/ClassModelsCatalog.java" />
+        <option value="$PROJECT_DIR$/src/kkn/derevi/test.java" />
         <option value="$PROJECT_DIR$/src/kkn/derevi/ClassModel.java" />
+        <option value="$PROJECT_DIR$/test/kkn/derevi/ClassEditorTest.java" />
+        <option value="$PROJECT_DIR$/src/kkn/derevi/ClassModelsCatalogGenerator.java" />
         <option value="$PROJECT_DIR$/src/kkn/derevi/ClassEditor.java" />
+        <option value="$PROJECT_DIR$/src/kkn/derevi/ClassModelsManager.java" />
+        <option value="$PROJECT_DIR$/src/kkn/derevi/UMLDiagramApp.java" />
       </list>
     </option>
   </component>
@@ -277,7 +278,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.TreeTierSortTest">
+  <component name="RunManager" selected="Application.test">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="kkn.derevi.Main" />
       <module name="Object Tree Creator" />
@@ -395,8 +396,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.TreeTierSortTest" />
         <item itemvalue="Application.test" />
+        <item itemvalue="JUnit.TreeTierSortTest" />
         <item itemvalue="JUnit.TreeTierSortTest.inputDependencyReturnsMapOfTierList" />
         <item itemvalue="Application.Main" />
       </list>
@@ -417,17 +418,11 @@
       <workItem from="1532545875054" duration="23997000" />
       <workItem from="1532713832143" duration="87315000" />
       <workItem from="1533407567601" duration="599000" />
-      <workItem from="1533471503480" duration="12972000" />
+      <workItem from="1533471503480" duration="29036000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="TreeTierSortTest - 2018.08.01 at 15h 58m 29s.xml">
-      <configuration name="TreeTierSortTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TreeTierSortTest - 2018.08.01 at 15h 58m 43s.xml">
-      <configuration name="TreeTierSortTest" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="TreeTierSortTest - 2018.08.01 at 15h 58m 44s.xml">
       <configuration name="TreeTierSortTest" configurationId="JUnit" />
     </history-entry>
@@ -452,9 +447,15 @@
     <history-entry file="TreeTierSortTest - 2018.08.01 at 16h 00m 09s.xml">
       <configuration name="TreeTierSortTest" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="TreeTierSortTest - 2018.08.07 at 21h 12m 17s.xml">
+      <configuration name="TreeTierSortTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TreeTierSortTest - 2018.08.07 at 21h 12m 27s.xml">
+      <configuration name="TreeTierSortTest" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="191424000" />
+    <option name="totallyTimeSpent" value="207488000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1920" y="27" width="1920" height="1029" extended-state="6" />
@@ -462,32 +463,32 @@
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="right" id="Palette&#9;" order="3" />
-      <window_info id="Image Layers" order="2" />
-      <window_info anchor="right" id="Capture Analysis" order="3" />
-      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
-      <window_info anchor="right" id="Maven Projects" order="3" />
-      <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32004198" />
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.32972974" />
+      <window_info anchor="right" id="Palette&#9;" order="9" />
+      <window_info id="Image Layers" order="7" />
+      <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
+      <window_info anchor="right" id="Maven Projects" order="5" />
+      <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="10" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32" />
       <window_info anchor="bottom" id="Terminal" order="7" />
-      <window_info id="Capture Tool" order="2" />
+      <window_info id="Capture Tool" order="4" />
       <window_info id="Designer" order="2" />
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24947916" />
-      <window_info anchor="right" id="Database" order="3" />
-      <window_info id="Learn" order="2" />
+      <window_info anchor="right" id="Database" order="6" />
+      <window_info id="Learn" order="6" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info id="UI Designer" order="2" />
-      <window_info anchor="right" id="Theme Preview" order="3" />
-      <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="Messages" order="7" weight="0.32972974" />
+      <window_info id="UI Designer" order="3" />
+      <window_info anchor="right" id="Theme Preview" order="7" />
+      <window_info id="Favorites" order="5" side_tool="true" />
+      <window_info anchor="bottom" id="Debug" order="3" visible="true" weight="0.4" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="right" id="Coverage" order="4" side_tool="true" weight="0.3296875" />
+      <window_info anchor="right" id="Coverage" order="8" side_tool="true" weight="0.3296875" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
     </layout>
@@ -503,25 +504,21 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/kkn/derevi/test.java</url>
-          <line>72</line>
+          <line>78</line>
           <properties />
           <option name="timeStamp" value="16" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/kkn/derevi/test.java</url>
+          <line>11</line>
+          <properties />
+          <option name="timeStamp" value="19" />
+        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="18" />
+      <option name="time" value="20" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/test/kkn/derevi/TreeTierSortTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/kkn/derevi/ClassOrganizer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
@@ -546,7 +543,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/kkn/derevi/ClassModelsCatalog.java">
+    <entry file="file://$PROJECT_DIR$/src/kkn/derevi/ClassModelsCatalogGenerator.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
           <caret line="22" column="45" lean-forward="true" selection-start-line="22" selection-start-column="45" selection-end-line="22" selection-end-column="45" />
@@ -569,8 +566,6 @@
           <caret line="24" column="22" selection-start-line="24" selection-start-column="22" selection-end-line="24" selection-end-column="22" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#2718#2719#0" expanded="true" />
-            <element signature="e#2760#2761#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -583,6 +578,8 @@
             <element signature="imports" expanded="true" />
             <element signature="e#743#744#0" expanded="true" />
             <element signature="e#786#787#0" expanded="true" />
+            <element signature="e#866#867#0" expanded="true" />
+            <element signature="e#901#902#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -653,8 +650,6 @@
           <caret line="24" column="22" selection-start-line="24" selection-start-column="22" selection-end-line="24" selection-end-column="22" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#2718#2719#0" expanded="true" />
-            <element signature="e#2760#2761#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -667,6 +662,8 @@
             <element signature="imports" expanded="true" />
             <element signature="e#743#744#0" expanded="true" />
             <element signature="e#786#787#0" expanded="true" />
+            <element signature="e#866#867#0" expanded="true" />
+            <element signature="e#901#902#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -729,6 +726,8 @@
             <element signature="imports" expanded="true" />
             <element signature="e#743#744#0" expanded="true" />
             <element signature="e#786#787#0" expanded="true" />
+            <element signature="e#866#867#0" expanded="true" />
+            <element signature="e#901#902#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -768,20 +767,11 @@
           <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#2718#2719#0" expanded="true" />
-            <element signature="e#2760#2761#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/kkn/derevi/kkn/derevi/ClassCreator.java" />
-    <entry file="file://$PROJECT_DIR$/src/kkn/derevi/ClassGeneratorPrompt.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" selection-start-line="4" selection-end-line="4" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/kkn/derevi/TreeTierSortTest.java" />
     <entry file="file://$PROJECT_DIR$/src/kkn/derevi/ClassTextDrawer.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -840,20 +830,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/kkn/derevi/UMLDiagramApp.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="9" selection-start-line="12" selection-start-column="9" selection-end-line="12" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/kkn/derevi/TreeTierSort.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="20" selection-start-line="4" selection-start-column="20" selection-end-line="4" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/kkn/derevi/ClassOrganizer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
@@ -864,44 +840,96 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/kkn/derevi/TreeTierSortTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/kkn/derevi/test.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="56" lean-forward="true" selection-start-line="18" selection-start-column="56" selection-end-line="18" selection-end-column="56" />
+        <state relative-caret-position="405">
+          <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/kkn/derevi/ClassModelsCatalog.java">
+    <entry file="file://$PROJECT_DIR$/test/kkn/derevi/TreeTierSortTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+        <state relative-caret-position="393">
+          <caret line="72" column="16" selection-start-line="72" selection-start-column="16" selection-end-line="72" selection-end-column="16" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/kkn/derevi/TreeTierSort.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="17" column="95" selection-start-line="17" selection-start-column="75" selection-end-line="17" selection-end-column="95" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test/kkn/derevi/ClassModelsCatalogTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="465">
+        <state relative-caret-position="375">
           <caret line="38" column="33" lean-forward="true" selection-start-line="38" selection-start-column="33" selection-end-line="38" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/kkn/derevi/ClassModelsCatalogGenerator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="15" column="77" lean-forward="true" selection-start-line="15" selection-start-column="77" selection-end-line="15" selection-end-column="77" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/kkn/derevi/ClassEditorTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="660">
+          <caret line="46" column="5" selection-start-line="46" selection-start-column="5" selection-end-line="46" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/kkn/derevi/ClassModelsManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-126">
+          <caret line="44" column="30" selection-start-line="44" selection-start-column="30" selection-end-line="44" selection-end-column="30" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/kkn/derevi/ClassEditor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-486">
+          <caret line="26" column="36" lean-forward="true" selection-start-line="26" selection-start-column="36" selection-end-line="26" selection-end-column="36" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#211#212#0" expanded="true" />
+            <element signature="e#271#272#0" expanded="true" />
+            <element signature="e#3696#3697#0" expanded="true" />
+            <element signature="e#3749#3750#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/kkn/derevi/ClassModel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="35" lean-forward="true" selection-start-line="16" selection-start-column="35" selection-end-line="16" selection-end-column="35" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#743#744#0" expanded="true" />
+            <element signature="e#786#787#0" expanded="true" />
+            <element signature="e#866#867#0" expanded="true" />
+            <element signature="e#901#902#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/kkn/derevi/ClassMethodsAndDependenciesAssembler.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="53" selection-start-line="12" selection-start-column="53" selection-end-line="12" selection-end-column="53" />
+        <state relative-caret-position="210">
+          <caret line="14" column="94" lean-forward="true" selection-start-line="14" selection-start-column="94" selection-end-line="14" selection-end-column="94" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#759#760#0" expanded="true" />
@@ -910,34 +938,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/kkn/derevi/ClassModel.java">
+    <entry file="file://$PROJECT_DIR$/src/kkn/derevi/ClassGeneratorPrompt.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="36" lean-forward="true" selection-start-line="14" selection-start-column="36" selection-end-line="14" selection-end-column="36" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#743#744#0" expanded="true" />
-            <element signature="e#786#787#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="60">
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/kkn/derevi/ClassEditor.java">
+    <entry file="file://$PROJECT_DIR$/src/kkn/derevi/UMLDiagramApp.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/kkn/derevi/ClassModelsManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="4" selection-start-line="13" selection-start-column="4" selection-end-line="13" selection-end-column="48" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#2718#2719#0" expanded="true" />
-            <element signature="e#2760#2761#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="345">
+          <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
         </state>
       </provider>
     </entry>

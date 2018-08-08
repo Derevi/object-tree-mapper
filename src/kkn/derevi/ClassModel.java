@@ -1,10 +1,8 @@
 package kkn.derevi;
 
-import javax.imageio.IIOException;
 import java.io.*;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Map;
 
 public class ClassModel implements Serializable {
 
@@ -33,12 +31,8 @@ public class ClassModel implements Serializable {
         return classMethods;
     }
 
-    public List<String> addClassMethod(String method) {
-        classMethods.add(method);
-        return  classMethods;
+    public List<String> getClassDependencies() {
+        return classDependencies;
     }
-
-
-
 
 }

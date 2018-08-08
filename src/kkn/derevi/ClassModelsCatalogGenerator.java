@@ -4,7 +4,7 @@ import java.io.*;
 import java.util.ArrayList;
 import java.util.List;
 
-public class ClassModelsCatalog {
+public class ClassModelsCatalogGenerator {
 
     //todo add parameter allowing for save/load of newfile or one that already exists
 
