@@ -1,29 +1,21 @@
 package kkn.derevi;
 
 import java.util.List;
-import java.util.Map;
 
 public class ClassEditor {
 
     private ClassModel classModel;
     private List<String> methodsList;
     private List<String> dependencyList;
+    private List<ClassModel> classModelsCatalog;
 
 
     public ClassEditor(ClassModel classModel) {
         this.classModel = classModel;
-        this.dependencyList = classModel.getClassDependencies();
-        this.methodsList = classModel.getClassMethods();
+        classModelsCatalog;
+
     }
 
-    public List<String> editClassMethodList(String className, String originalMethodName, String renamedMethod) {
-        if (renamedMethod == null) {
-            methodsList.remove(originalMethodName);
-            return methodsList;
-        }
-        methodsList.set(methodsList.indexOf(originalMethodName), renamedMethod);
-        return methodsList;
-    }
 
     public void editClassName(String renamedClass) {
         classModel.setClassName(renamedClass);
@@ -33,14 +25,24 @@ public class ClassEditor {
         classModel = null; //deleted by garbage collector
     }
 
-    public List<String> addClassDependency(String dependencyName) {
-        dependencyList.add(dependencyName);
-        return dependencyList;
+    public List<String> addElementToClassModel(String dependency, List<String> selectedListFromClassModel) {
+        selectedListFromClassModel.add(dependency);
+
+        return  selectedListFromClassModel;
     }
 
-    public List<String> removeClassDependency(String dependencyName) {
-        dependencyList.add(dependencyName);
-        return dependencyList;
+    public List<String> removeElementFromClassModel(String dependency, List<String> selectedListFromClassModel){
+        selectedListFromClassModel.remove(dependency);
+        return selectedListFromClassModel;
+    }
+
+    public List<String> replaceElementFromClassModel(int index, String newName, List<String> selectedListFromClassModel){
+        if (newName == null) {
+            selectedListFromClassModel.remove(newName);
+            return methodsList;
+        }
+        selectedListFromClassModel.set(index, newName);
+        return selectedListFromClassModel;
     }
 
 

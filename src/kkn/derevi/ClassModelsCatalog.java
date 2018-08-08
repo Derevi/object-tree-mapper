@@ -4,16 +4,19 @@ import java.io.*;
 import java.util.ArrayList;
 import java.util.List;
 
-public class ClassModelsList {
+public class ClassModelsCatalog {
 
+    //todo add parameter allowing for save/load of newfile or one that already exists
 
-    public static List<ClassModel> load(){
-        List<ClassModel> classModels = new ArrayList<>();
+    private List<ClassModel> classModelsCatalog;
+
+    public  List<ClassModel> load(String fileName){
+        classModelsCatalog = new ArrayList<>();
         try(
-                FileInputStream fis = new FileInputStream("classModels.ser");
+                FileInputStream fis = new FileInputStream(fileName + ".ser");
                 ObjectInputStream ois = new ObjectInputStream(fis);
         )
-        {classModels = (List<ClassModel>) ois.readObject();
+        {classModelsCatalog = (List<ClassModel>) ois.readObject();
 
         }catch (IOException ioe){
             System.out.println("Error reading the file");
@@ -22,15 +25,15 @@ public class ClassModelsList {
             System.out.println("Error loading the class models from file");
             cnfe.printStackTrace();
         }
-        return classModels;
+        return classModelsCatalog;
     }
 
-    public static void save(List<ClassModel> classModels){
+    public  void save(String fileName, List<ClassModel> classModelsCatalog){
 
         try (
-                FileOutputStream fos = new FileOutputStream("ClassModels.ser");
+                FileOutputStream fos = new FileOutputStream(fileName + ".ser");
                 ObjectOutputStream oos = new ObjectOutputStream(fos);
-        ) {oos.writeObject(classModels);}
+        ) {oos.writeObject(classModelsCatalog);}
         catch (IOException ioe){
             System.out.printf("Error, could not save classmodels");
             ioe.printStackTrace();

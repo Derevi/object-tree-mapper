@@ -6,17 +6,19 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 
-public class ClassModel {
+public class ClassModel implements Serializable {
 
+    private static final long serialVersionUID = 1L;
     private List<String> classMethods;
     private List<String> classDependencies;
     private String className;
+    private ClassEditor classEditor;
 
 
-    public ClassModel(String className, List<String> classMethods, List<String> classDependencies) {
+    public ClassModel(String className) {
         this.className = className;
-        this.classDependencies = classDependencies;
-        this.classMethods = classMethods;
+        classMethods = new ArrayList<>();
+        classDependencies = new ArrayList<>();
     }
 
     public String getClassName() {
@@ -31,16 +33,9 @@ public class ClassModel {
         return classMethods;
     }
 
-    public void setClassMethods(List<String> classMethods) {
-        this.classMethods = classMethods;
-    }
-
-    public List<String> getClassDependencies() {
-        return classDependencies;
-    }
-
-    public void setClassDependency(List<String> classDependencies) {
-        this.classDependencies = classDependencies;
+    public List<String> addClassMethod(String method) {
+        classMethods.add(method);
+        return  classMethods;
     }
 
 
