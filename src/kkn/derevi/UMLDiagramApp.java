@@ -17,6 +17,10 @@ public class UMLDiagramApp {
            classModelsManager.run();
         }
 
+        //todo GUI
+        //todo implement user input dialogue
+        //todo refactor sort algorithm
+
 
 
     }
