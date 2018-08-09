@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="b343eec7-740e-4ce4-8442-d3ca28e39fc5" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/src/kkn/derevi/ClassEditor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kkn/derevi/ClassEditor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/kkn/derevi/ClassModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kkn/derevi/ClassModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/kkn/derevi/ClassModelsManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kkn/derevi/ClassModelsManager.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -24,15 +22,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="UMLDiagramApp.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/kkn/derevi/UMLDiagramApp.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="21" column="38" selection-start-line="21" selection-start-column="38" selection-end-line="21" selection-end-column="38" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="ClassModelsManager.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/kkn/derevi/ClassModelsManager.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -48,13 +37,22 @@
       <file leaf-file-name="ClassEditor.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/kkn/derevi/ClassEditor.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1530">
-              <caret line="102" column="35" lean-forward="true" selection-start-line="102" selection-start-column="35" selection-end-line="102" selection-end-column="35" />
+            <state relative-caret-position="465">
+              <caret line="127" column="73" selection-start-line="127" selection-start-column="73" selection-end-line="127" selection-end-column="73" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#5774#5775#0" expanded="true" />
-                <element signature="e#5827#5828#0" expanded="true" />
+                <element signature="e#5865#5866#0" expanded="true" />
+                <element signature="e#5918#5919#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="EditorForClassMethodsAndDependencies.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/kkn/derevi/EditorForClassMethodsAndDependencies.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
             </state>
           </provider>
         </entry>
@@ -143,8 +141,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Arquillian JUnit Test Class" />
-        <option value="Class" />
         <option value="JUnit4 Test Class" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -418,7 +416,7 @@
       <workItem from="1532545875054" duration="23997000" />
       <workItem from="1532713832143" duration="87315000" />
       <workItem from="1533407567601" duration="599000" />
-      <workItem from="1533471503480" duration="42737000" />
+      <workItem from="1533471503480" duration="45891000" />
     </task>
     <servers />
   </component>
@@ -455,7 +453,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="221189000" />
+    <option name="totallyTimeSpent" value="224343000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1920" y="27" width="1920" height="1029" extended-state="6" />
@@ -519,13 +517,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/kkn/derevi/test.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1650">
-          <caret line="110" lean-forward="true" selection-start-line="110" selection-end-line="110" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/kkn/derevi/TreeTierSort.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="840">
@@ -938,14 +929,21 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/kkn/derevi/EditorForClassMethodsAndDependencies.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/kkn/derevi/ClassEditor.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1530">
-          <caret line="102" column="35" lean-forward="true" selection-start-line="102" selection-start-column="35" selection-end-line="102" selection-end-column="35" />
+        <state relative-caret-position="465">
+          <caret line="127" column="73" selection-start-line="127" selection-start-column="73" selection-end-line="127" selection-end-column="73" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#5774#5775#0" expanded="true" />
-            <element signature="e#5827#5828#0" expanded="true" />
+            <element signature="e#5865#5866#0" expanded="true" />
+            <element signature="e#5918#5919#0" expanded="true" />
           </folding>
         </state>
       </provider>

@@ -18,6 +18,10 @@ public class ClassEditor {
     }
 
     public void editorPrompter() throws IOException, InputMismatchException {
+        String choice = "";
+        String newClassName= "";
+        boolean continueEditing = true;
+        do {
 
         printAllClassModels();
 
@@ -28,39 +32,37 @@ public class ClassEditor {
                 "%n4. Edit methods or dependencies of a class" +
                 "%n5. Draw classes as a tree diagram" +
                 "%n6. Exit editor");
-        String choice = "";
+        choice = inputReader.readLine();
         int editClassModel = 0;
         int editListInClassModel = 1;
-        String userInputClassModelIndex = inputReader.readLine();
-        int  selectedClassModelIndex = Integer.parseInt(userInputClassModelIndex);//prompt input
-        boolean continueEditing = true;
-        ClassModel selectedClassModel = classModelsCatalog.get(selectedClassModelIndex);
+        int selectedClassModelIndex = inputStringToInt(inputReader.readLine());
+        ClassModel selectedClassModel = classModelSelector(selectedClassModelIndex);
 
-        if(classModelsCatalog.isEmpty()){
-            //please add class and notes its methods and dependencies
-        }else {
-            do {
-                switch (choice) {
+            if (classModelsCatalog.isEmpty()){ choice="1";}
+
+
+
+            switch (choice) {
                     case "newClass":
-                        String newClassName = inputReader.readLine();
+                        newClassName = inputReader.readLine();
                         ClassModel newClassModel = new ClassModel(newClassName);
-                        //prompt edit new class now?
                         editClassModelList(newClassModel);
 
                     case "renameClassModel":
-                        String newClassName = inputReader.readLine();
+                        newClassName = inputReader.readLine();
                         renameClassName(selectedClassModel, newClassName);
                         break;
                     case "deleteClassModel":
                         deleteClassModel(selectedClassModel);
                         break;
                     case "editClassModelList":
+                        selectedClassModel = classModelSelector(selectedClassModelIndex);
                         editClassModelList(selectedClassModel);
                         break;
 
                     case "render":
                         //todo put in its own method named: renderClassModelsCatalog
-                        if(classModelsCatalog.isEmpty()){
+                        if (classModelsCatalog.isEmpty()) {
                             System.out.printf("The catalouge is empty, there is nothing to render, please add");
                             break;
                         }
@@ -72,20 +74,25 @@ public class ClassEditor {
                         //new sorter interface
 
                         //treesort and drawer
+                        break;
 
                     case "exitEditor":
                         continueEditing = false;
+                        break;
                     default:
                         System.out.printf("enter command again");
                         break;
 
                 }
+
             } while (continueEditing);
-        };
-
-
-
     }
+
+
+
+
+
+
     private void printAllClassModels(){
         classModelsCatalog.forEach(classModel -> {
                 int i = 1;
@@ -95,9 +102,10 @@ public class ClassEditor {
     }
 
 
-    private void editClassModelList(ClassModel classModel){
+    private void editClassModelList(ClassModel classModel) throws IOException {
             String choice = "";
             String elementName = "";
+            boolean continueListEdit = true;
             int selectedClass;
             int elementIndex;
             int selecetedListIndex;
@@ -105,7 +113,12 @@ public class ClassEditor {
             //select class
         //wrap do while
         do{
-        selectedList = listSelector(selecetedListIndex);
+            choice = inputReader.readLine();
+            String selectedListInput = inputReader.readLine();
+            selecetedListIndex = Integer.parseInt(selectedListInput);
+
+        selectedList = listSelector(classModel, selecetedListIndex);
+
             switch (choice){
                 case "add":
                     addElementToSelectedList(selectedList, elementName);
@@ -116,7 +129,11 @@ public class ClassEditor {
                 case "replace list": //reserve this as hidden option depending in UI
                     List<String> replacementList = new ArrayList<>();
                     replaceAllElementsFromSelectedList(selectedList, replacementList);
+                case "exit class list editor, and select class":
+                    continueListEdit = false;
+                    break;
                 default:
+                    System.out.printf("%nPlease enter a valid choice, try again%n");
                     break;
 
 
@@ -149,6 +166,12 @@ public class ClassEditor {
         }
     }
 
+    private int inputStringToInt(String input) throws IOException {
+
+        int inputToInt = Integer.parseInt(input);
+        return inputToInt;
+    }
+
 
 
     private void deleteClassModel(ClassModel classModel) {
@@ -170,6 +193,15 @@ public class ClassEditor {
 
         else{classModel.setClassName(newClassName);}
 
+    }
+    private ClassModel classModelSelector(int selectionIndex) throws IOException {
+
+        if(selectionIndex>classModelsCatalog.size() || selectionIndex<0){
+            System.out.printf("%nPlease enter a number from the classes in the list:%n");
+            selectionIndex = inputStringToInt(inputReader.readLine());
+            return classModelSelector(selectionIndex);
+        }
+        return classModelsCatalog.get(selectionIndex);
     }
 
     private void addElementToSelectedList(List<String> selectedList, String elementName) {
