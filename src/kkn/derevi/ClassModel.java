@@ -2,6 +2,7 @@ package kkn.derevi;
 
 import java.io.*;
 import java.util.ArrayList;
+import java.util.Collection;
 import java.util.List;
 
 public class ClassModel implements Serializable {
@@ -33,6 +34,35 @@ public class ClassModel implements Serializable {
 
     public List<String> getClassDependencies() {
         return classDependencies;
+    }
+
+    @Override
+    public String toString(){
+        String all=className + "\n" +className.length();
+        for(char c: className.toCharArray()){
+
+            all = all+"-";
+        }
+
+        all = all + "\n";
+        all= all +"Methods:\t";
+
+        for(String method: classMethods){
+            int i=1;
+            String numbered = String.valueOf(i);
+            all=all + "("+numbered+") "+ method + "\t";
+        }
+
+        all = all + "\n";
+        all= all +"Dependencies:\t";
+
+        for(String dependency: classDependencies){
+            int i=1;
+            String numbered = String.valueOf(i);
+            all= all + "("+numbered+") "+dependency + "\t";
+        }
+        all = all + "\n\n";
+        return all;
     }
 
 }

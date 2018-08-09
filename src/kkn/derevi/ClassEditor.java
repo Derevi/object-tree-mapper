@@ -1,21 +1,38 @@
 package kkn.derevi;
 
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
 import java.util.ArrayList;
+import java.util.InputMismatchException;
 import java.util.List;
 
 public class ClassEditor {
 
     private List<ClassModel> classModelsCatalog;
+    BufferedReader inputReader;
 
     public ClassEditor(List<ClassModel> classModelsCatalog) {
         this.classModelsCatalog = classModelsCatalog;
+        inputReader = new BufferedReader(new InputStreamReader(System.in));
     }
 
-    public void editorPrompter(){
+    public void editorPrompter() throws IOException, InputMismatchException {
+
+        printAllClassModels();
+
+        System.out.printf("%n%nPlease select an option to edit a Class:" +
+                "%n1. Create new class" +
+                "%n2. Rename existing class" +
+                "%n3. Delete existing class" +
+                "%n4. Edit methods or dependencies of a class" +
+                "%n5. Draw classes as a tree diagram" +
+                "%n6. Exit editor");
         String choice = "";
         int editClassModel = 0;
         int editListInClassModel = 1;
-        int selectedClassModelIndex;//prompt input
+        String userInputClassModelIndex = inputReader.readLine();
+        int  selectedClassModelIndex = Integer.parseInt(userInputClassModelIndex);//prompt input
         boolean continueEditing = true;
         ClassModel selectedClassModel = classModelsCatalog.get(selectedClassModelIndex);
 
@@ -25,13 +42,13 @@ public class ClassEditor {
             do {
                 switch (choice) {
                     case "newClass":
-                        String newClassName;
+                        String newClassName = inputReader.readLine();
                         ClassModel newClassModel = new ClassModel(newClassName);
                         //prompt edit new class now?
                         editClassModelList(newClassModel);
 
                     case "renameClassModel":
-                        String newClassName;
+                        String newClassName = inputReader.readLine();
                         renameClassName(selectedClassModel, newClassName);
                         break;
                     case "deleteClassModel":
@@ -68,6 +85,13 @@ public class ClassEditor {
 
 
 
+    }
+    private void printAllClassModels(){
+        classModelsCatalog.forEach(classModel -> {
+                int i = 1;
+                System.out.printf("%n(d%) %s%n", i, classModel);
+                i++;
+    });
     }
 
 

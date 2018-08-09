@@ -4,6 +4,7 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
+import java.util.InputMismatchException;
 import java.util.List;
 
 public class ClassModelsManager {
@@ -74,6 +75,9 @@ public class ClassModelsManager {
             System.out.printf("Please enter a valid input");
             ioe.printStackTrace();
 
+        }catch (InputMismatchException ime){
+            System.out.printf("Please enter the correct input, if the prompt asks for a number please only input a number.");
+            ime.printStackTrace();
         }
 
 
