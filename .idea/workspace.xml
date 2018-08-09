@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="b343eec7-740e-4ce4-8442-d3ca28e39fc5" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/src/kkn/derevi/ClassEditor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kkn/derevi/ClassEditor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/kkn/derevi/EditorForClassMethodsAndDependencies.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kkn/derevi/EditorForClassMethodsAndDependencies.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -37,8 +38,8 @@
       <file leaf-file-name="ClassEditor.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/kkn/derevi/ClassEditor.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="465">
-              <caret line="127" column="73" selection-start-line="127" selection-start-column="73" selection-end-line="127" selection-end-column="73" />
+            <state relative-caret-position="210">
+              <caret line="128" column="5" lean-forward="true" selection-start-line="128" selection-start-column="5" selection-end-line="128" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#5865#5866#0" expanded="true" />
@@ -51,8 +52,11 @@
       <file leaf-file-name="EditorForClassMethodsAndDependencies.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/kkn/derevi/EditorForClassMethodsAndDependencies.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+            <state relative-caret-position="405">
+              <caret line="27" column="28" lean-forward="true" selection-start-line="27" selection-start-column="28" selection-end-line="27" selection-end-column="28" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -173,6 +177,7 @@
         <option value="$PROJECT_DIR$/test/kkn/derevi/ClassModelsManagerTest.java" />
         <option value="$PROJECT_DIR$/src/kkn/derevi/ClassModelsManager.java" />
         <option value="$PROJECT_DIR$/src/kkn/derevi/ClassModel.java" />
+        <option value="$PROJECT_DIR$/src/kkn/derevi/EditorForClassMethodsAndDependencies.java" />
         <option value="$PROJECT_DIR$/src/kkn/derevi/ClassEditor.java" />
       </list>
     </option>
@@ -416,7 +421,7 @@
       <workItem from="1532545875054" duration="23997000" />
       <workItem from="1532713832143" duration="87315000" />
       <workItem from="1533407567601" duration="599000" />
-      <workItem from="1533471503480" duration="45891000" />
+      <workItem from="1533471503480" duration="49376000" />
     </task>
     <servers />
   </component>
@@ -453,7 +458,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="224343000" />
+    <option name="totallyTimeSpent" value="227828000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1920" y="27" width="1920" height="1029" extended-state="6" />
@@ -473,7 +478,7 @@
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Capture Tool" order="4" />
       <window_info id="Designer" order="2" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24947916" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24947916" />
       <window_info anchor="right" id="Database" order="6" />
       <window_info id="Learn" order="6" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -931,15 +936,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/kkn/derevi/EditorForClassMethodsAndDependencies.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+        <state relative-caret-position="405">
+          <caret line="27" column="28" lean-forward="true" selection-start-line="27" selection-start-column="28" selection-end-line="27" selection-end-column="28" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/kkn/derevi/ClassEditor.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="465">
-          <caret line="127" column="73" selection-start-line="127" selection-start-column="73" selection-end-line="127" selection-end-column="73" />
+        <state relative-caret-position="210">
+          <caret line="128" column="5" lean-forward="true" selection-start-line="128" selection-start-column="5" selection-end-line="128" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#5865#5866#0" expanded="true" />
