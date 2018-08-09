@@ -71,7 +71,7 @@ public class ClassEditor {
     }
 
 
-    public void editClassModelList(ClassModel classModel){
+    private void editClassModelList(ClassModel classModel){
             String choice = "";
             String elementName = "";
             int selectedClass;
@@ -104,7 +104,7 @@ public class ClassEditor {
 
 
 
-    public List<String> listSelector(ClassModel selectedClassModel, int selectedListIndex){
+    private List<String> listSelector(ClassModel selectedClassModel, int selectedListIndex){
         int classMetodsIndex = 0;
         int classDependencyIndex = 1;
         List<String> selectedList = new ArrayList<>();
@@ -127,11 +127,11 @@ public class ClassEditor {
 
 
 
-    public void deleteClassModel(ClassModel classModel) {
+    private void deleteClassModel(ClassModel classModel) {
         classModelsCatalog.remove(classModel);
     }
 
-    public void renameClassName(ClassModel classModel, String newClassName) {
+    private void renameClassName(ClassModel classModel, String newClassName) {
 
         if(newClassName.isEmpty()){
             System.out.printf("you did not type anything in, would you like to delete this entire class model?");
@@ -148,19 +148,19 @@ public class ClassEditor {
 
     }
 
-    public void addElementToSelectedList(List<String> selectedList, String elementName) {
+    private void addElementToSelectedList(List<String> selectedList, String elementName) {
         selectedList.add(elementName);
     }
 
-    public void deleteElementFromSelectedList(List<String> selectedList, String elementName) {
+    private void deleteElementFromSelectedList(List<String> selectedList, String elementName) {
         selectedList.remove(elementName);
     }
 
-    public void renameElementFromSelectedList(List<String> selectedList, int elementIndex, String newElementName) {
+    private void renameElementFromSelectedList(List<String> selectedList, int elementIndex, String newElementName) {
        selectedList.set(elementIndex, newElementName);
     }
 
-    public void replaceAllElementsFromSelectedList(List<String> selectedList, List<String> replacementList) {
+    private void replaceAllElementsFromSelectedList(List<String> selectedList, List<String> replacementList) {
         selectedList.clear();
         selectedList.addAll(replacementList);
     }
