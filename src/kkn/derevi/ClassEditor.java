@@ -41,6 +41,21 @@ public class ClassEditor {
                         editClassModelList(selectedClassModel);
                         break;
 
+                    case "render":
+                        //todo put in its own method named: renderClassModelsCatalog
+                        if(classModelsCatalog.isEmpty()){
+                            System.out.printf("The catalouge is empty, there is nothing to render, please add");
+                            break;
+                        }
+                        ClassMethodsAndDependenciesAssembler classMethodsAndDependenciesAssembler = new ClassMethodsAndDependenciesAssembler(classModelsCatalog);
+                        classMethodsAndDependenciesAssembler.getAllClassesAndDependencies();
+                        classMethodsAndDependenciesAssembler.getAllClassesAndMethods();
+                        List<String> allClasses = new ArrayList<>();
+                        allClasses.addAll(classMethodsAndDependenciesAssembler.getAllClassesAndMethods().keySet());
+                        //new sorter interface
+
+                        //treesort and drawer
+
                     case "exitEditor":
                         continueEditing = false;
                     default:
