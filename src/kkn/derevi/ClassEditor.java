@@ -3,18 +3,24 @@ package kkn.derevi;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.util.ArrayList;
-import java.util.InputMismatchException;
-import java.util.List;
+import java.util.*;
 
 public class ClassEditor {
-
+    //todo put in its own method named: renderClassModelsCatalog it may be easiest to create a new class
+    //called valid input checker that has 2 overloaded methods, one that takes list and in and another that takes list and string
     private List<ClassModel> classModelsCatalog;
     BufferedReader inputReader;
+
+
 
     public ClassEditor(List<ClassModel> classModelsCatalog) {
         this.classModelsCatalog = classModelsCatalog;
         inputReader = new BufferedReader(new InputStreamReader(System.in));
+        Map<String, Editor> mapy = new HashMap<>();
+        Editor edit = new ClassCatalogEditor();
+        mapy.put("test", edit);
+
+
     }
 
     public void editorPrompter() throws IOException, InputMismatchException {
@@ -31,8 +37,6 @@ public class ClassEditor {
         ClassModel selectedClassModel = classModelSelector(selectedClassModelIndex);
 
             if (classModelsCatalog.isEmpty()){ choice="1";}
-
-
 
             switch (choice) {
                     case "newClass":
@@ -56,7 +60,7 @@ public class ClassEditor {
                         break;
 
                     case "render":
-                        //todo put in its own method named: renderClassModelsCatalog
+
                         if (classModelsCatalog.isEmpty()) {
                             System.out.printf("The catalouge is empty, there is nothing to render, please add");
                             break;
@@ -91,12 +95,6 @@ public class ClassEditor {
         });
     }
 
-
-
-    private int inputStringToInt(String input) throws IOException {
-        int inputToInt = Integer.parseInt(input);
-        return inputToInt;
-    }
 
 
 
@@ -138,6 +136,8 @@ public class ClassEditor {
                 "%n(6) Exit editor%n");
 
     }
+
+    //TODO add method for index checker so that we abide by dry
 
 }
 /*

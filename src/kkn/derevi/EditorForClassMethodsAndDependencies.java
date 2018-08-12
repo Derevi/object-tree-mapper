@@ -10,12 +10,12 @@ import java.util.List;
 public class EditorForClassMethodsAndDependencies {
     private ClassModel classModel;
     BufferedReader inputReader;
-
+    List<String> selectedList;
 
     public void editClassModelList(ClassModel classModel) throws IOException, InputMismatchException {
         this.classModel = classModel;
         inputReader = new BufferedReader(new InputStreamReader(System.in));
-        List<String> selectedList;
+
         String elementName = "";
         boolean continueListEdit = true;
         String choice = "";
@@ -27,6 +27,8 @@ public class EditorForClassMethodsAndDependencies {
 
             switch (choice){
                 case "1":
+                    //string newelement nam = prompter.askForName
+                    //prompt for index choice
                     addElementToSelectedList(selectedList, elementName);
                 case "2":
                     deleteElementFromSelectedList(selectedList, elementName);

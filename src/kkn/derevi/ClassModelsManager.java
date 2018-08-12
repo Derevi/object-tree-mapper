@@ -22,6 +22,9 @@ public class ClassModelsManager {
         {do{
             do {
 
+                //use factory pattern and MAP as well as Key set to choose or command pattern in this structure
+                //https://stackoverflow.com/questions/1199646/long-list-of-if-statements-in-java
+
                 System.out.printf("%nPlease select an option by typing in the number : " +
                         "%n1. Create new UML diagram" +
                         "%n2. Load UML diagram" +
