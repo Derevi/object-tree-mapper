@@ -11,6 +11,14 @@ public class ClassEditor {
     private List<ClassModel> classModelsCatalog;
     BufferedReader inputReader;
 
+    //load or new... call methods
+    //edit class catalog? rename edit or delete. Type convert object to lowest form
+
+    //edit class model? select model... select list
+    //edit list
+    //x out to catalog
+
+    //x out to loader screen
 
 
     public ClassEditor(List<ClassModel> classModelsCatalog) {

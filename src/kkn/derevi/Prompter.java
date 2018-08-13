@@ -71,6 +71,7 @@ public class Prompter {
     }
 
     public void requestSelection(String userInput, int indexChoice) {
+
         String userIndex = promptForString();
         if (userIndex.equals("x")) {return;};
         int indexChoices = promptForIndex(userIndex);

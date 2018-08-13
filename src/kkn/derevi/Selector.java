@@ -2,31 +2,34 @@ package kkn.derevi;
 
 import java.util.List;
 
-public class Selector extends EditorTemplate implements  Editor{
-    List<String> listmodel;
+public class Selector {
+    List<Object> listmodel;
 
-
-    public Selector(Prompter prompter,) {
-        super(prompter);
+    public Selector(List<Object> listmodel) {
+        this.listmodel = listmodel;
     }
 
-    @Override
-    public List<ClassModel> edit(List<ClassModel> classCatalog) {
-        classCatalogs = classCatalog;
-        String selection = prompter.promptForString();
-        ClassModel classModel = new ClassModel(selection);
-        classCatalog.add(classModel);
-        super.continueedit();
-        return classCatalog;
+    public List<Object> getListModel(ClassModel classModel) {
+
+        List<String> listOfStrings;
+        if(userSelectsMethods){
+            listmodel = classModel.getClassDependencies();
+        }else if(userSeletsDependencies){
+           listmodel = List.of(classModel.getClassMethods());
+
+        }
+
+
+
+
+        return listmodel;
     }
 
-    @Override
-    public void edit(ClassModel classModel) {
 
-
-
-        listmodel = classCatalogs.get(1).getClassDependencies();
-        listmodel = classCatalogs.get(2).getClassMethods();
-
+    public ClassModel getListModel(List<ClassModel> classCatalog){
+        return classCatalog.get(1);///TODO prompt for index selection
     }
+
 }
+
+

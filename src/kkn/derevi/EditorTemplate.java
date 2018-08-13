@@ -41,6 +41,11 @@ public class EditorTemplate {
         return classCatalog;
     }
 
+    public void resetUserSelection(){
+        newName= "";
+        indexChoice = (Integer)null;
+    }
+
 
 
 }
