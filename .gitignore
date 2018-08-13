@@ -25,6 +25,6 @@ hs_err_pid*
 /.idea/workspace.xml
 /.idea/tasks.xml
 #.idea/dictionaries
-#.idea/
+/.idea/*
 /src/kkn/derevi/test.java
 /out/production/Object\ Tree\ Creator/kkn/derevi/test.class
