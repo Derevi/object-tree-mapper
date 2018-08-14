@@ -27,4 +27,6 @@ hs_err_pid*
 #.idea/dictionaries
 /.idea/*
 /src/kkn/derevi/test.java
+/object-tree-mapper.iml
+/Object Tree Creator.iml
 /out/production/Object\ Tree\ Creator/kkn/derevi/test.class
