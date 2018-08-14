@@ -81,6 +81,17 @@ public class Prompter {
 
     }
 
+    public void requestSelection(int indexChoice) {
+
+        String userIndex = promptForString();
+        if (userIndex.equals("x")) {return;};
+        int indexChoices = promptForIndex(userIndex);
+
+        return;
+
+
+    }
+
 
 
 

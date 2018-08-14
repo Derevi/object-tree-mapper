@@ -17,12 +17,23 @@ public class CommandManager {
         }
 
 
+
+
+
+
+
+
         Prompter prompter = new Prompter();
         Editor replacer = new Replacer();
         Editor inserter = new Insertor();
         Editor deletor= new Deletor();
         List<String> selectedList = new ArrayList<>();
         Editor editor;
+
+
+
+
+
 
         commandMap.put("Replace", );
         commandMap.put("insert", inserter);

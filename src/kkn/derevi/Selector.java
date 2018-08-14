@@ -4,8 +4,10 @@ import java.util.List;
 
 public class Selector {
     List<Object> listmodel;
+    Prompter prompter;
 
-    public Selector(List<Object> listmodel) {
+    public Selector(List<Object> listmodel, Prompter prompter) {
+        this.prompter = prompter;
         this.listmodel = listmodel;
     }
 
@@ -27,6 +29,8 @@ public class Selector {
 
 
     public ClassModel getListModel(List<ClassModel> classCatalog){
+
+
         return classCatalog.get(1);///TODO prompt for index selection
     }
 
