@@ -15,6 +15,11 @@ public class UMLDiagramApp {
 
         }
 
+        //while true..inifinite loop, user can exit program
+
+        //Start menu
+        //start app...
+
         //todo GUI
         //todo implement user input dialogue
         //todo refactor sort algorithm

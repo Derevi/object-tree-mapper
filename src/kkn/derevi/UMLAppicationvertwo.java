@@ -21,6 +21,16 @@ public class UMLAppicationvertwo {
                 classModelsCatalogGenerator.load("user input");
             }
 
+            //classCatalog now set...
+            //Class catalog edit menu...
+            //add delete rename OR edit class model
+
+            //if class model choosen .
+            //select list, add delete rename, select another model
+            //x select list\
+            //x out to other menu
+            //x out to catalog editor
+
 
             //if selection save
             List<ClassModel> classCatalog = new ArrayList<>();
