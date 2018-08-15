@@ -11,7 +11,6 @@ public class ClassModel implements Serializable {
     private List<String> classMethods;
     private List<String> classDependencies;
     private String className;
-    private ClassEditor classEditor;
 
 
     public ClassModel(String className) {

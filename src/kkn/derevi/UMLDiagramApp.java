@@ -13,8 +13,6 @@ public class UMLDiagramApp {
         while (args[0].equals("-t") ||args[0].equals("terminal")) {
            //todo code is only place holder for now, will edit once UI is completed
 
-           ClassModelsManager classModelsManager = new ClassModelsManager();
-           classModelsManager.run();
         }
 
         //todo GUI
