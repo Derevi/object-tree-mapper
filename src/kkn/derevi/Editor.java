@@ -3,9 +3,9 @@ package kkn.derevi;
 import java.util.List;
 
 public interface Editor  {
-    List<Object> edit(List<Object> selectedList);
-
-
+//    List<Object> edit(List<Object> selectedList);
+    public List<ClassModel> edit(String Name);
+    public List<String> edit(List<String> List, String Name);
 //editor x selcted item
     //Editor x modify selectfrom
     //editer edit = new dd

@@ -5,9 +5,11 @@ import java.util.List;
 public class Insertor extends EditorTemplate implements Editor {
 
 
-    public Insertor(Prompter prompter) {
-        super(prompter);
+    public Insertor(List<ClassModel> classCatalog) {
+        super(classCatalog);
     }
+
+    /*
 
     @Override
     public List<Object> edit(List<Object> selectedList) {
@@ -18,5 +20,21 @@ public class Insertor extends EditorTemplate implements Editor {
         resetUserSelection();
         return edit(selectedList);
     }
+
+    */
+
+    //pull promper outside
+
+    public List<ClassModel> edit(String Name){
+        ClassModel classModel = new ClassModel(Name);
+        classCatalog.add(classModel);
+        return classCatalog;
+    }
+
+    public List<String> edit(List<String> List, String Name){
+        List.add(Name);
+        return List;
+    }
+
 
 }

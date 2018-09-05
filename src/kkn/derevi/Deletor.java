@@ -5,10 +5,27 @@ import java.util.List;
 public class Deletor extends EditorTemplate implements Editor {
 
 
-    public Deletor(Prompter prompter) {
-        super(prompter);
+    public Deletor(List<ClassModel> classCatalog) {
+        super(classCatalog);
     }
 
+    @Override
+    public List<ClassModel> edit(String Name) {
+        classCatalog.add(super.createNewClassModel(Name));
+        return classCatalog;
+    }
+
+    @Override
+    public List<String> edit(List<String> selectedList, String Name) {
+        selectedList.remove(Name);
+        return selectedList;
+    }
+
+
+
+
+
+    /*
     @Override
     public List<Object> edit(List<Object> selectedList) {
         this.selectedList = selectedList;
@@ -21,6 +38,8 @@ public class Deletor extends EditorTemplate implements Editor {
         return edit(selectedList);
 
     }
+
+    */
 
 
     }

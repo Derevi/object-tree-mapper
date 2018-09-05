@@ -9,6 +9,7 @@ public class Prompter {
     BufferedReader inputReader = new BufferedReader(new InputStreamReader(System.in));
 
 
+
     public String promptForString() {
         String input = "";
         try{
