@@ -17,19 +17,45 @@ public class UMLEditorMenu {
     }
 
     public void menu(){
-        printMenuEachEdit();
-        editClassCatalog();
 
-        printMenuEachEdit();
-        editClassModel();
+        //loader / start menu
+
+        String optionSelection = prompter.promptForString();
+        if(optionSelection.equals("x")){return;}
+        int indexSelection = Integer.parseInt(optionSelection);
+        catalogEditMenu();
+        optionSelection = prompter.promptForString();
+        classModelEditMenu();
+
     }
 
-    public void editClassCatalog(){
+    public void editClassCatalog(String name){
         System.out.println("edit class catalog");
         int commandIndex = prompter.promptForIndex(); //if equals x exit
-        String name = prompter.promptForString(); //if equals x exit
+        if (name.equals("x")) {return;}
         commands.get(commandIndex).edit(name);
+        editClassCatalog(name);
 
+    }
+    public void catalogEditMenu(){
+        printMenuEachEdit();
+        String name = prompter.promptForString();
+        if (name.equals("x")) {
+            return;
+        }
+        editClassCatalog(name);
+        catalogEditMenu();
+
+    }
+
+    public void classModelEditMenu(){
+        printMenuEachEdit();
+        String name = prompter.promptForString();
+        if (name.equals("x")) {
+            return;
+        }
+        editClassCatalog(name);
+        catalogEditMenu();
     }
 
     public ClassModel getClassModel() {
